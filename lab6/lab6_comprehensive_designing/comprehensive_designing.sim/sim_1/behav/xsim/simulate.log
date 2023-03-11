@@ -1,0 +1,121 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file dist_mem_gen_0.mif
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               150000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               330000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               510000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               690000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               870000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: Too many words specified in data file dist_mem_gen_0.mif
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               150000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               330000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               510000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               690000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time               870000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              1050000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              1230000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              1410000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              1590000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              1770000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              1950000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              2250000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              2430000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              2750000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              3070000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              3390000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              3690000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              4010000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              4330000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              4650000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              4970000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              5410000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              5730000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              6030000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              6330000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              6650000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              6950000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              7270000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              7590000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              8030000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              8330000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              8630000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              8930000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              9230000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              9530000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time              9850000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             10270000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             10570000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             10870000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             11170000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             11470000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             11790000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             12210000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             12510000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             12810000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             13110000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             13410000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             13850000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             14150000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             14450000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+WARNING in simu.cpu.cpu_pl.cpu.Data_memory.inst at time             14750000 ns: 
+Reading from out-of-range address. Max address in simu.cpu.cpu_pl.cpu.Data_memory.inst is         255
+$finish called at time : 20 us : File "E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sim_1/imports/new/simu.v" Line 20

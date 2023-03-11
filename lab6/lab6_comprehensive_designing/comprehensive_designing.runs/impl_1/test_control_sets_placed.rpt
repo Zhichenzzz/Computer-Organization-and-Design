@@ -1,0 +1,124 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Jun 23 08:51:18 2021
+| Host         : DESKTOP-PR8J8MG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file test_control_sets_placed.rpt
+| Design       : test
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    46 |
+|    Minimum number of control sets                        |    46 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    46 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    41 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             354 |          167 |
+| No           | No                    | Yes                    |              28 |           10 |
+| No           | Yes                   | No                     |              67 |           45 |
+| Yes          | No                    | No                     |             992 |          859 |
+| Yes          | No                    | Yes                    |              80 |           36 |
+| Yes          | Yes                   | No                     |              70 |           33 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------------------------------------------------+------------------------------+------------------+----------------+
+|  Clock Signal  |                                              Enable Signal                                              |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------------------------------------------------------------------+------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | cpu_pl/cpu/Y/ready_r0_out                                                                               | sw_IBUF[7]                   |                1 |              1 |
+|  clk_IBUF_BUFG | cpu_pl/cpu/Y/data_reg[3]_0[0]                                                                           | sw_IBUF[7]                   |                1 |              5 |
+|  clk_IBUF_BUFG | cpu_pl/pdu/cnt_m_rf[4]_i_1_n_0                                                                          | sw_IBUF[7]                   |                4 |             10 |
+|  clk_cpu       |                                                                                                         | cpu_pl/cpu/IR/data_reg[6]_0  |                4 |             12 |
+|  clk_IBUF_BUFG |                                                                                                         |                              |                9 |             12 |
+|  clk_cpu       |                                                                                                         | cpu_pl/cpu/EX/data_reg[0]_0  |               12 |             23 |
+|  clk_IBUF_BUFG |                                                                                                         | sw_IBUF[7]                   |               10 |             28 |
+|  clk_IBUF_BUFG | cpu_pl/cpu/Y/E[0]                                                                                       | sw_IBUF[7]                   |               21 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[4]_6[0]                                                                         |                              |               28 |             32 |
+|  clk_cpu       |                                                                                                         | cpu_pl/cpu/RdW/data_reg[3]_2 |               29 |             32 |
+|  clk_cpu       | cpu_pl/cpu/Rd/E[0]                                                                                      | sw_IBUF[7]                   |                9 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_3[0]                                                                         |                              |               28 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[3]_5[0]                                                                         |                              |               28 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_5[0]                                                                         |                              |               27 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_5[0]                                                                         |                              |               26 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[3]_6[0]                                                                         |                              |               27 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_8[0]                                                                         |                              |               25 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[4]_1[0]                                                                         |                              |               29 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[4]_2[0]                                                                         |                              |               30 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[4]_3[0]                                                                         |                              |               28 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_7[0]                                                                         |                              |               27 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_10[0]                                                                        |                              |               30 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_8[0]                                                                         |                              |               26 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_3[0]                                                                         |                              |               26 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_4[0]                                                                         |                              |               27 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_6[0]                                                                         |                              |               27 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_9[0]                                                                         |                              |               28 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/E[0]                                                                                     |                              |               30 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_2[0]                                                                         |                              |               29 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_4[0]                                                                         |                              |               30 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_6[0]                                                                         |                              |               26 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_9[0]                                                                         |                              |               26 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_1[0]                                                                         |                              |               29 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_2[0]                                                                         |                              |               29 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_7[0]                                                                         |                              |               26 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[2]_10[0]                                                                        |                              |               28 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[3]_3[0]                                                                         |                              |               29 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[3]_4[0]                                                                         |                              |               26 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[1]_1[0]                                                                         |                              |               29 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[4]_5[0]                                                                         |                              |               28 |             32 |
+|  clk_cpu       | cpu_pl/cpu/RdW/data_reg[4]_4[0]                                                                         |                              |               27 |             32 |
+|  clk_cpu       | cpu_pl/data[31]_i_2__3_n_0                                                                              | cpu_pl/cpu/EX/data_reg[0]_0  |               33 |             70 |
+|  clk_cpu       | cpu_pl/RegWrite0                                                                                        |                              |               12 |             96 |
+|  clk_cpu       | cpu_pl/cpu/Data_memory/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_0_127_0_0_i_1_n_0   |                              |               32 |            128 |
+|  clk_cpu       | cpu_pl/cpu/Data_memory/U0/synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg_128_255_0_0_i_1_n_0 |                              |               32 |            128 |
+|  clk_cpu       |                                                                                                         |                              |              158 |            342 |
++----------------+---------------------------------------------------------------------------------------------------------+------------------------------+------------------+----------------+
+
+

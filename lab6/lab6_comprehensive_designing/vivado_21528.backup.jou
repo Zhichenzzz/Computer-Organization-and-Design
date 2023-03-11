@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 19 12:07:54 2022
+# Process ID: 21528
+# Current directory: E:/computer/COD/lab06/comprehensive_designing
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent716 E:\computer\COD\lab06\comprehensive_designing\comprehensive_designing.xpr
+# Log file: E:/computer/COD/lab06/comprehensive_designing/vivado.log
+# Journal file: E:/computer/COD/lab06/comprehensive_designing\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/data.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/float_data.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/float_text.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/hazard.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/sortF_data.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/sortF_text.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/sort_data.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/sort_text.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/test.coe] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files d:/TempDesktop/test_ins/test1.coe] -no_script -reset -force -quiet
+remove_files  {d:/TempDesktop/test_ins/data.coe d:/TempDesktop/test_ins/float_data.coe d:/TempDesktop/test_ins/float_text.coe d:/TempDesktop/test_ins/hazard.coe d:/TempDesktop/test_ins/sortF_data.coe d:/TempDesktop/test_ins/sortF_text.coe d:/TempDesktop/test_ins/sort_data.coe d:/TempDesktop/test_ins/sort_text.coe d:/TempDesktop/test_ins/test.coe d:/TempDesktop/test_ins/test1.coe}
+set_property -dict [list CONFIG.coefficient_file {E:/computer/COD/lab06/sortF_data.coe}] [get_ips dist_mem_gen_0]
+delete_ip_run [get_files -of_objects [get_fileset dist_mem_gen_0] E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+set_property generate_synth_checkpoint false [get_files  E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {E:/computer/COD/lab06/sortF_text.coe}] [get_ips dist_mem_gen_1]
+set_property generate_synth_checkpoint false [get_files  E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+generate_target Simulation [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/sim_scripts -ip_user_files_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files -ipstatic_source_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/modelsim} {questa=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/questa} {riviera=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/riviera} {activehdl=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target Simulation [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+export_ip_user_files -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci] -directory E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/sim_scripts -ip_user_files_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files -ipstatic_source_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/modelsim} {questa=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/questa} {riviera=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/riviera} {activehdl=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source simu.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source test.tcl
+generate_target all [get_files  E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+export_ip_user_files -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/sim_scripts -ip_user_files_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files -ipstatic_source_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/modelsim} {questa=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/questa} {riviera=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/riviera} {activehdl=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+generate_target all [get_files  E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+export_ip_user_files -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci] -directory E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/sim_scripts -ip_user_files_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files -ipstatic_source_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/modelsim} {questa=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/questa} {riviera=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/riviera} {activehdl=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+source test.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top simu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source simu.tcl
+open_run impl_1
+set_property generate_synth_checkpoint true [get_files  E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+generate_target all [get_files  E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+launch_runs -jobs 8 dist_mem_gen_0_synth_1
+wait_on_run dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/sim_scripts -ip_user_files_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files -ipstatic_source_dir E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/modelsim} {questa=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/questa} {riviera=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/riviera} {activehdl=E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property generate_synth_checkpoint true [get_files  E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+generate_target all [get_files  E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_1] }
+export_ip_user_files -of_objects [get_files E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci]
+launch_runs -jobs 8 dist_mem_gen_1_synth_1
+wait_on_run dist_mem_gen_1_synth_1
+close_sim
+launch_simulation
+close_design
+launch_simulation
+launch_simulation
+source simu.tcl
+close_sim

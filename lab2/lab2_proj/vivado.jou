@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 31 08:39:59 2022
+# Process ID: 6060
+# Current directory: D:/Courses/大二下/cs/cod实验/实验2/zy_lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13556 D:\Courses\大二下\cs\cod实验\实验2\zy_lab2\zy_lab2.xpr
+# Log file: D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/vivado.log
+# Journal file: D:/Courses/大二下/cs/cod实验/实验2/zy_lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.xpr
+update_compile_order -fileset sources_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_0 -dir d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1
+set_property -dict [list CONFIG.depth {32} CONFIG.coefficient_file {D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/LAB2.coe}] [get_ips dist_mem_gen_0]
+generate_target {instantiation_template} [get_files d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/dist_mem_gen_0/dist_mem_gen_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/dist_mem_gen_0/dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/dist_mem_gen_0/dist_mem_gen_0.xci]
+launch_runs dist_mem_gen_0_synth_1 -jobs 4
+wait_on_run dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/dist_mem_gen_0/dist_mem_gen_0.xci] -directory D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.ip_user_files/sim_scripts -ip_user_files_dir D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.ip_user_files -ipstatic_source_dir D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.cache/compile_simlib/modelsim} {questa=D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.cache/compile_simlib/questa} {riviera=D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.cache/compile_simlib/riviera} {activehdl=D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1
+set_property -dict [list CONFIG.Write_Depth_A {32} CONFIG.Load_Init_File {false}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/blk_mem_gen_0/blk_mem_gen_0.xci]
+generate_target all [get_files  d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/blk_mem_gen_0/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs blk_mem_gen_0_synth_1 -jobs 4
+wait_on_run blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/blk_mem_gen_0/blk_mem_gen_0.xci] -directory D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.ip_user_files/sim_scripts -ip_user_files_dir D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.ip_user_files -ipstatic_source_dir D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.cache/compile_simlib/modelsim} {questa=D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.cache/compile_simlib/questa} {riviera=D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.cache/compile_simlib/riviera} {activehdl=D:/Courses/大二下/cs/cod实验/实验2/zy_lab2/zy_lab2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/blk_mem_gen_0/blk_mem_gen_0.xci
+export_ip_user_files -of_objects  [get_files d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset dist_mem_gen_0 d:/Courses/cs/cod/2/zy_lab2/zy_lab2.srcs/sources_1/dist_mem_gen_0/dist_mem_gen_0.xci

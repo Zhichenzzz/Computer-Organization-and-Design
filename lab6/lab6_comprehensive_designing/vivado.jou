@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May 23 23:40:16 2022
+# Process ID: 8456
+# Current directory: E:/computer/COD/lab06/comprehensive_designing
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24376 E:\computer\COD\lab06\comprehensive_designing\comprehensive_designing.xpr
+# Log file: E:/computer/COD/lab06/comprehensive_designing/vivado.log
+# Journal file: E:/computer/COD/lab06/comprehensive_designing\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/computer/COD/lab06/comprehensive_designing/comprehensive_designing.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source simu.tcl
+current_wave_config {Untitled 1}
+add_wave {{/simu/cpu/cpu_pl}} 
+current_wave_config {Untitled 1}
+add_wave {{/simu/cpu/cpu_pl/cpu/Data_memory}} 
+current_wave_config {Untitled 1}
+add_wave {{/simu/cpu/cpu_pl/cpu/Instruction_memory}} 
+close_sim
+close_project
+open_project E:/computer/COD/final/lab6/lab6.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source cpu_test.tcl
+current_wave_config {Untitled 2}
+add_wave {{/cpu_test}} 
+close_sim
+launch_simulation
+source cpu_test.tcl
+close_sim

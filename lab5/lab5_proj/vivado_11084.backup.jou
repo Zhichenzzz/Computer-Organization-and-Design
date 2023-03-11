@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 19 23:01:03 2022
+# Process ID: 11084
+# Current directory: D:/Courses/COD/CPU_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6708 D:\Courses\COD\CPU_2\CPU_2.xpr
+# Log file: D:/Courses/COD/CPU_2/vivado.log
+# Journal file: D:/Courses/COD/CPU_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Courses/COD/CPU_2/CPU_2.xpr
+update_compile_order -fileset sources_1
+reset_run I_mem_synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+generate_target Simulation [get_files D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci]
+export_ip_user_files -of_objects [get_files D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci] -directory D:/Courses/COD/CPU_2/CPU_2.ip_user_files/sim_scripts -ip_user_files_dir D:/Courses/COD/CPU_2/CPU_2.ip_user_files -ipstatic_source_dir D:/Courses/COD/CPU_2/CPU_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/modelsim} {questa=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/questa} {riviera=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/riviera} {activehdl=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source top.tcl
+close_sim
+launch_simulation
+source top.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/HUAWEI/Desktop/schematic.pdf
+open_run synth_1 -name synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim

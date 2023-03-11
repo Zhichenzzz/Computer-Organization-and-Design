@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May  8 21:37:06 2022
+# Process ID: 12540
+# Current directory: D:/Courses/COD/CPU_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4036 D:\Courses\COD\CPU_2\CPU_2.xpr
+# Log file: D:/Courses/COD/CPU_2/vivado.log
+# Journal file: D:/Courses/COD/CPU_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Courses/COD/CPU_2/CPU_2.xpr
+update_compile_order -fileset sources_1
+add_files {D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci D:/Courses/COD/CPU_2/CPU_2.ip_user_files/D_mem_1/D_mem.xci D:/Courses/COD/CPU_2/CPU_2.ip_user_files/D_mem/D_mem.xci D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem_1/I_mem.xci}
+export_ip_user_files -of_objects  [get_files  {D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci D:/Courses/COD/CPU_2/CPU_2.ip_user_files/D_mem_1/D_mem.xci}] -lib_map_path [list {modelsim=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/modelsim} {questa=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/questa} {riviera=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/riviera} {activehdl=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -vlnv xilinx.com:ip:dist_mem_gen:8.0 [get_ips  I_mem] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips I_mem] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci]
+catch { config_ip_cache -export [get_ips -all I_mem] }
+export_ip_user_files -of_objects [get_files D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci]
+launch_runs -jobs 4 I_mem_synth_1
+export_simulation -of_objects [get_files D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem.xci] -directory D:/Courses/COD/CPU_2/CPU_2.ip_user_files/sim_scripts -ip_user_files_dir D:/Courses/COD/CPU_2/CPU_2.ip_user_files -ipstatic_source_dir D:/Courses/COD/CPU_2/CPU_2.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/modelsim} {questa=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/questa} {riviera=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/riviera} {activehdl=D:/Courses/COD/CPU_2/CPU_2.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files D:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem_1/I_mem.xci
+add_files -norecurse D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/imm.v
+set_property source_mgmt_mode All [current_project]
+add_files -norecurse {D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/Imm.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/Forwarding_Unit.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/PDU_PL.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/Segment_reg.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/PCregister.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/control.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/top.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/mux2.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/alu.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/mux3.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/reg.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/register.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/add.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/SegmentRegister.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/cpu_pl.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/Hazard_Detection_Unit.v D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/PCreg.v}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/PCreg.v] -no_script -reset -force -quiet
+remove_files  D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/PCreg.v
+export_ip_user_files -of_objects  [get_files D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/reg.v] -no_script -reset -force -quiet
+remove_files  D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/reg.v
+export_ip_user_files -of_objects  [get_files D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/SegmentRegister.v] -no_script -reset -force -quiet
+remove_files  D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/SegmentRegister.v
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse D:/Courses/COD/CPU_2/CPU_2.srcs/constrs_1/top.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design

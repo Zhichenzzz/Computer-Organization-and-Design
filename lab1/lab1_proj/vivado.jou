@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Mar 17 20:21:26 2022
+# Process ID: 95688
+# Current directory: C:/Users/13232/Desktop/vivado/zy_lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent94304 C:\Users\13232\Desktop\vivado\zy_lab1\zy_lab1.xpr
+# Log file: C:/Users/13232/Desktop/vivado/zy_lab1/vivado.log
+# Journal file: C:/Users/13232/Desktop/vivado/zy_lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/ALU_test.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/ALU_test.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close [ open C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/sources_1/new/fls.v w ]
+add_files C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/sources_1/new/fls.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/constrs_1/new/fls_xdc.xdc w ]
+add_files -fileset constrs_1 C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/constrs_1/new/fls_xdc.xdc
+set_property target_constrs_file C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/constrs_1/new/fls_xdc.xdc [current_fileset -constrset]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top fls [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/fls.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/fls.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/fls.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close [ open C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/sources_1/new/D.v w ]
+add_files C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/sources_1/new/D.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/fls.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/fls.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+add_files -norecurse {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/sources_1/new/top_qdd.v C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/sources_1/new/register.v}
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.srcs/sources_1/new/counter21.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/fls.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/fls.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/13232/Desktop/vivado/zy_lab1/zy_lab1.runs/impl_1/fls.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw

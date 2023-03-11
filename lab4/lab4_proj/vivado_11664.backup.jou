@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 24 20:02:55 2022
+# Process ID: 11664
+# Current directory: D:/Courses/COD实验/zy_lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16508 D:\Courses\COD实验\zy_lab4\zy_lab4.xpr
+# Log file: D:/Courses/COD实验/zy_lab4/vivado.log
+# Journal file: D:/Courses/COD实验/zy_lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Courses/COD实验/zy_lab4/zy_lab4.xpr
+update_compile_order -fileset sources_1
+reset_run I_mem1_synth_1
+launch_runs I_mem1_synth_1
+wait_on_run I_mem1_synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run I_mem1_synth_1
+launch_runs I_mem1_synth_1
+wait_on_run I_mem1_synth_1

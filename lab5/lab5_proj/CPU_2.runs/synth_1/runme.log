@@ -1,0 +1,582 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7284 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 863.582 ; gain = 235.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PDU_PL' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/pdu_pl.v:1]
+INFO: [Synth 8-226] default block is never used [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/pdu_pl.v:259]
+WARNING: [Synth 8-3936] Found unconnected internal register 'in_2r_reg' and it is trimmed from '5' to '2' bits. [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/pdu_pl.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'PDU_PL' (1#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/pdu_pl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'cpu_pl' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/cpu_pl.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/mux2.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/mux2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PCregister' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/PCregister.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PCregister' (3#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/PCregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'add' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/add.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'add' (4#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/add.v:1]
+INFO: [Synth 8-6157] synthesizing module 'I_mem' [D:/Courses/COD/CPU_2/CPU_2.runs/synth_1/.Xil/Vivado-13424-LAPTOP-47V1HNQK/realtime/I_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'I_mem' (5#1) [D:/Courses/COD/CPU_2/CPU_2.runs/synth_1/.Xil/Vivado-13424-LAPTOP-47V1HNQK/realtime/I_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'SegmentRegister' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/Segment_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SegmentRegister' (6#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/Segment_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/register.v:1]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'register' (7#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/register.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Imm' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/imm.v:23]
+	Parameter ADDI bound to: 7'b0010011 
+	Parameter ADD bound to: 7'b0110011 
+	Parameter JAL bound to: 7'b1101111 
+	Parameter BEQ bound to: 7'b1100011 
+	Parameter LW bound to: 7'b0000011 
+	Parameter SW bound to: 7'b0100011 
+INFO: [Synth 8-6155] done synthesizing module 'Imm' (8#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/imm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/control.v:23]
+	Parameter ADDI bound to: 7'b0010011 
+	Parameter ADD bound to: 7'b0110011 
+	Parameter JAL bound to: 7'b1101111 
+	Parameter BEQ bound to: 7'b1100011 
+	Parameter LW bound to: 7'b0000011 
+	Parameter SW bound to: 7'b0100011 
+INFO: [Synth 8-6155] done synthesizing module 'control' (9#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hazard_Detection_Unit' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/hazard_detection_unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Hazard_Detection_Unit' (10#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/hazard_detection_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/mux3.v:1]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (11#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/mux3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Forwarding_Unit' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/forwarding_unit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Forwarding_Unit' (12#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/forwarding_unit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/alu.v:23]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'alu' (13#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/alu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'D_mem' [D:/Courses/COD/CPU_2/CPU_2.runs/synth_1/.Xil/Vivado-13424-LAPTOP-47V1HNQK/realtime/D_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'D_mem' (14#1) [D:/Courses/COD/CPU_2/CPU_2.runs/synth_1/.Xil/Vivado-13424-LAPTOP-47V1HNQK/realtime/D_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cpu_pl' (15#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/cpu_pl.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'top' (16#1) [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 936.059 ; gain = 307.621
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 936.059 ; gain = 307.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 936.059 ; gain = 307.621
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 936.059 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Courses/COD/CPU_2/CPU_2.ip_user_files/D_mem_1/D_mem/D_mem_in_context.xdc] for cell 'top_cpu/Dmem'
+Finished Parsing XDC File [d:/Courses/COD/CPU_2/CPU_2.ip_user_files/D_mem_1/D_mem/D_mem_in_context.xdc] for cell 'top_cpu/Dmem'
+Parsing XDC File [d:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem/I_mem_in_context.xdc] for cell 'top_cpu/Imem'
+Finished Parsing XDC File [d:/Courses/COD/CPU_2/CPU_2.ip_user_files/I_mem/I_mem/I_mem_in_context.xdc] for cell 'top_cpu/Imem'
+Parsing XDC File [D:/Courses/COD/CPU_2/CPU_2.srcs/constrs_1/top.xdc]
+Finished Parsing XDC File [D:/Courses/COD/CPU_2/CPU_2.srcs/constrs_1/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Courses/COD/CPU_2/CPU_2.srcs/constrs_1/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Courses/COD/CPU_2/CPU_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Courses/COD/CPU_2/CPU_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1042.090 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1042.090 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1042.090 ; gain = 413.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1042.090 ; gain = 413.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for top_cpu/Dmem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_cpu/Imem. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1042.090 ; gain = 413.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/pdu_pl.v:132]
+INFO: [Synth 8-5546] ROM "RegSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Courses/COD/CPU_2/CPU_2.srcs/sources_1/new/alu.v:30]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1042.090 ; gain = 413.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	              224 Bit    Registers := 4     
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 14    
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   7 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PDU_PL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 3     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module PCregister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module add 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module SegmentRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	              224 Bit    Registers := 1     
+Module register 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+Module Imm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 6     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Forwarding_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 2     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Control/RegSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'top_cpu/IF_ID/out_reg[128]' (FDRE) to 'top_cpu/IF_ID/out_reg[160]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[128]' (FDRE) to 'top_cpu/ID_EX/out_reg[160]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[220]' (FDRE) to 'top_cpu/ID_EX/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[220]' (FDRE) to 'top_cpu/EX_MEM/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[220]' (FDRE) to 'top_cpu/MEM_WB/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[216]' (FDRE) to 'top_cpu/ID_EX/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[216]' (FDRE) to 'top_cpu/EX_MEM/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[216]' (FDRE) to 'top_cpu/MEM_WB/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[212]' (FDRE) to 'top_cpu/ID_EX/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[212]' (FDRE) to 'top_cpu/EX_MEM/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[212]' (FDRE) to 'top_cpu/MEM_WB/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[221]' (FDRE) to 'top_cpu/ID_EX/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[221]' (FDRE) to 'top_cpu/EX_MEM/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[221]' (FDRE) to 'top_cpu/MEM_WB/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[217]' (FDRE) to 'top_cpu/ID_EX/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[217]' (FDRE) to 'top_cpu/EX_MEM/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[217]' (FDRE) to 'top_cpu/MEM_WB/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[213]' (FDRE) to 'top_cpu/ID_EX/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[213]' (FDRE) to 'top_cpu/EX_MEM/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[213]' (FDRE) to 'top_cpu/MEM_WB/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[197]' (FDRE) to 'top_cpu/ID_EX/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[197]' (FDRE) to 'top_cpu/EX_MEM/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[197]' (FDRE) to 'top_cpu/MEM_WB/out_reg[193]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[193]' (FDRE) to 'top_cpu/ID_EX/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[193]' (FDRE) to 'top_cpu/EX_MEM/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[193]' (FDRE) to 'top_cpu/MEM_WB/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[222]' (FDRE) to 'top_cpu/ID_EX/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[222]' (FDRE) to 'top_cpu/EX_MEM/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[222]' (FDRE) to 'top_cpu/MEM_WB/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[218]' (FDRE) to 'top_cpu/ID_EX/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[218]' (FDRE) to 'top_cpu/EX_MEM/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[218]' (FDRE) to 'top_cpu/MEM_WB/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[214]' (FDRE) to 'top_cpu/ID_EX/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[214]' (FDRE) to 'top_cpu/EX_MEM/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[214]' (FDRE) to 'top_cpu/MEM_WB/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[206]' (FDRE) to 'top_cpu/ID_EX/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[206]' (FDRE) to 'top_cpu/EX_MEM/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[206]' (FDRE) to 'top_cpu/MEM_WB/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[202]' (FDRE) to 'top_cpu/ID_EX/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[202]' (FDRE) to 'top_cpu/EX_MEM/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[202]' (FDRE) to 'top_cpu/MEM_WB/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[198]' (FDRE) to 'top_cpu/ID_EX/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[198]' (FDRE) to 'top_cpu/EX_MEM/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[198]' (FDRE) to 'top_cpu/MEM_WB/out_reg[194]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[194]' (FDRE) to 'top_cpu/ID_EX/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[194]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[194]' (FDRE) to 'top_cpu/MEM_WB/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[223]' (FDRE) to 'top_cpu/ID_EX/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[223]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[223]' (FDRE) to 'top_cpu/MEM_WB/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[219]' (FDRE) to 'top_cpu/ID_EX/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[219]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[219]' (FDRE) to 'top_cpu/MEM_WB/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[215]' (FDRE) to 'top_cpu/ID_EX/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[215]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[215]' (FDRE) to 'top_cpu/MEM_WB/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[211]' (FDRE) to 'top_cpu/ID_EX/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[211]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[211]' (FDRE) to 'top_cpu/MEM_WB/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[207]' (FDRE) to 'top_cpu/ID_EX/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[207]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[207]' (FDRE) to 'top_cpu/MEM_WB/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[203]' (FDRE) to 'top_cpu/ID_EX/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[203]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[203]' (FDRE) to 'top_cpu/MEM_WB/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[199]' (FDRE) to 'top_cpu/ID_EX/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/EX_MEM/out_reg[199]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[199]' (FDRE) to 'top_cpu/MEM_WB/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[20]' (FDRE) to 'top_cpu/ID_EX/out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[21]' (FDRE) to 'top_cpu/ID_EX/out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[22]' (FDRE) to 'top_cpu/ID_EX/out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[23]' (FDRE) to 'top_cpu/ID_EX/out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[24]' (FDRE) to 'top_cpu/ID_EX/out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[25]' (FDRE) to 'top_cpu/ID_EX/out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[26]' (FDRE) to 'top_cpu/ID_EX/out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[27]' (FDRE) to 'top_cpu/ID_EX/out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[28]' (FDRE) to 'top_cpu/ID_EX/out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[29]' (FDRE) to 'top_cpu/ID_EX/out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[30]' (FDRE) to 'top_cpu/ID_EX/out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/ID_EX/out_reg[192]' (FDRE) to 'top_cpu/ID_EX/out_reg[200]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\top_cpu/ID_EX/out_reg[195] )
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[31]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[30]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[29]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[28]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[27]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[26]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[25]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[24]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[23]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[22]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[21]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[20]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[19]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[18]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[17]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[16]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[15]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[14]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[13]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Synth 8-3886] merging instance 'top_cpu/MEM_WB/out_reg[12]' (FDRE) to 'top_cpu/EX_MEM/out_reg[195]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1042.090 ; gain = 413.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+----------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------------+-----------+----------------------+--------------+
+|top         | top_cpu/registerfile/regfile_reg | Implied   | 32 x 32              | RAM32M x 18	 | 
++------------+----------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1042.090 ; gain = 413.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1129.453 ; gain = 501.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+----------------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives   | 
++------------+----------------------------------+-----------+----------------------+--------------+
+|top         | top_cpu/registerfile/regfile_reg | Implied   | 32 x 32              | RAM32M x 18	 | 
++------------+----------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1130.496 ; gain = 502.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1130.496 ; gain = 502.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1130.496 ; gain = 502.059
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1130.496 ; gain = 502.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1130.496 ; gain = 502.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1130.496 ; gain = 502.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1130.496 ; gain = 502.059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |I_mem         |         1|
+|2     |D_mem         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |D_mem  |     1|
+|2     |I_mem  |     1|
+|3     |BUFG   |     2|
+|4     |CARRY4 |    37|
+|5     |LUT1   |     7|
+|6     |LUT2   |    57|
+|7     |LUT3   |    39|
+|8     |LUT4   |   109|
+|9     |LUT5   |   142|
+|10    |LUT6   |   350|
+|11    |MUXF7  |    16|
+|12    |RAM32M |    18|
+|13    |FDCE   |    82|
+|14    |FDPE   |    21|
+|15    |FDRE   |   535|
+|16    |IBUF   |    10|
+|17    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+------------------+------+
+|      |Instance         |Module            |Cells |
++------+-----------------+------------------+------+
+|1     |top              |                  |  1536|
+|2     |  top_cpu        |cpu_pl            |  1170|
+|3     |    EX_MEM       |SegmentRegister   |   154|
+|4     |    ID_EX        |SegmentRegister_0 |   287|
+|5     |    IF_ID        |SegmentRegister_1 |   188|
+|6     |    MEM_WB       |SegmentRegister_2 |   311|
+|7     |    PC           |PCregister        |    35|
+|8     |    addar        |add               |    55|
+|9     |    pcadd        |add_3             |     8|
+|10    |    registerfile |register          |    28|
+|11    |  top_pdu        |PDU_PL            |   339|
++------+-----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1130.496 ; gain = 502.059
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:48 . Memory (MB): peak = 1130.496 ; gain = 396.027
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1130.496 ; gain = 502.059
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1142.277 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 71 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1142.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+151 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1142.277 ; gain = 804.539
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1142.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Courses/COD/CPU_2/CPU_2.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 23:21:55 2022...

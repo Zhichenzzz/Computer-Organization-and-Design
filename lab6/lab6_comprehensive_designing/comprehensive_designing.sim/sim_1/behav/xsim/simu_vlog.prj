@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../comprehensive_designing.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/ALU.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/ALU_control.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/Add.v" \
+"../../../../comprehensive_designing.srcs/sources_1/new/Branch_unit.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/CPU.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/CPU_PL.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/new/Forwarding_unit.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/new/Hazard_detection_unit.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/ImmGen.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/Mux.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/new/PC.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/Registers.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/Shift_left.v" \
+"../../../../comprehensive_designing.srcs/sources_1/new/compareF.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/control.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/pdu_pl.v" \
+"../../../../comprehensive_designing.srcs/sources_1/new/Reg_offset.v" \
+"../../../../comprehensive_designing.srcs/sources_1/imports/sources_1/imports/new/segment_register.v" \
+"../../../../comprehensive_designing.srcs/sim_1/imports/new/simu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

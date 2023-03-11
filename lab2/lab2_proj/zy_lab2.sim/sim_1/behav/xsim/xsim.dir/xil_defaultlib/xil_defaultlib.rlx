@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sim_1/new/FSM_sim.v,1648484201,verilog,,,,FSM_sim,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sim_1/new/LCU_sim.v,1648543846,verilog,,,,LCU_sim,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/ADD.v,1648469825,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/D.v,,ADD,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/D.v,1648540464,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/FSM.v,,D,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/FSM.v,1648541332,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/LCU.v,,FSM,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/LCU.v,1648541303,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/eq.v,,LCU,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/eq.v,1648469889,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/mux.v,,eq,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/mux.v,1648470309,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/register1_2.v,,mux,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/register1_2.v,1648515497,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/register1_3.v,,register1_2,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/register1_3.v,1648469610,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/register1_4.v,,register1_3,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/register1_4.v,1648469652,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/register8_4.v,,register1_4,,,,,,,,
+C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sources_1/new/register8_4.v,1648469710,verilog,,C:/Users/13232/Desktop/vivado/zy_lab2/zy_lab2.srcs/sim_1/new/LCU_sim.v,,register8_4,,,,,,,,

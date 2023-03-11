@@ -1,0 +1,3 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: "E:\vivado\Vivado\2019.1\data/verilog/src/unisims/FDRE.v" Line 150: Timing violation in scope /LCU_sim/LCU_sim/D0/b_reg/TChk150_198 at time 177678 ps $setuphold (posedge C,negedge D,(0:0:0),(0:0:0),notifier,in_clk_enable_p,in_clk_enable_p,C_dly,D_dly) 
