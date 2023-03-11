@@ -7,3 +7,5 @@ USTC Computer Organization and Design Course Project
 - Program Fibonacci Numbers by using RISC-V assembly language
 - Design Single Cycle RISC-V CPU which supports 10 instructions
 - Design Multi Cycle RISC-V CPU (Five stage pipeline)
+
+Finished by Zhichen Zeng, USTC, 2022.5
